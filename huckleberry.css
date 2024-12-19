@@ -1,0 +1,257 @@
+/* Body Styling*/
+body {
+  font-family: 'lato', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0; 
+   
+}
+.main-header {
+  max-width: 800px;
+  margin:5% auto;
+  background-color: #ffffff;
+  min-height: 50%;
+}
+h1 {
+  font-size: 36px;
+  font-family: "lato", sans-seriff;
+  color: black;
+  font-weight: bold;
+  margin: 1%;
+  padding-left: 2%;
+}
+
+.intro-message,
+.sub-text {
+  font-family: sans-serif;
+  font-size: 20px;
+  width:100%;
+  margin: 1%;
+  padding-left: 2%;
+}
+
+.highlight {
+  color: #1a9349; 
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  margin:1%;
+   padding-left: 2%;
+}
+.with{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  color:#333333;
+    font-family: sans-serif;
+    font-weight:normal;
+}
+
+.separator {
+  height: 8px;
+  background-color: #999999; 
+  margin: 0;
+}
+
+.main-background {
+  background-color: #666666;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content:center;
+}
+/* Card and Banner */
+.card {
+  width: 100%; 
+  max-width: 800px; 
+  margin: 5% auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  position: relative; 
+  width: 50%; 
+  z-index: 1; 
+  transform: translateX(-2%); 
+  text-align: left; 
+  margin-top: 1%;
+
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  display: block; 
+  object-fit: cover; 
+}
+
+.wealth-message {
+  position: absolute; 
+  top: 25%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  font-size: 20px;
+  font-weight: bold;
+  margin: 2%;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Description and Closing Messages */
+.description,
+.closing-message {
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-left: 2%;
+  margin: 1%;
+}
+
+/* Card Separator */
+.card-separator {
+  height: 8px;
+  background-color: #999999;
+  margin-top: auto;
+}
+
+/* Tablet Specific Styles */
+@media (max-width: 768px) {
+  .main-header {
+    margin: 5% 5%;
+    max-width: 90%; 
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .intro-message,
+  .sub-text,
+  .operation-message,
+  .wealth-message,
+  .description,
+  .closing-message {
+    font-size: 18px; 
+    text-align: left;
+    padding-left: 2%;
+    margin: 1%;
+  }
+
+  .card {
+    max-width: 100%;
+    margin: 5% 2%;
+    padding: 0 2%; 
+  }
+
+  .banner {
+    width: 100%; 
+    padding: 10px; 
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .banner-image {
+    width: 100%;
+    height: auto; 
+  }
+
+  .wealth-message {
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .operation-message {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .highlight {
+    font-size: 20px; 
+  }
+}
+
+
+/* Mobile Specific Styles */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .intro-message,
+  .sub-text,
+  .operation-message,
+  .wealth-message,
+  .description,
+  .closing-message {
+    font-size: 1em;
+    text-align: left;
+    padding-left: 2%;
+    margin: 1%;
+  }
+
+  .card {
+    min-width: 100%;
+    background-color: #ffffff;
+    padding: 0 2%; 
+  }
+
+  .banner {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .wealth-message {
+    font-size: 18px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .operation-message {
+    font-size: 1em;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
+
+  
+  .main-header {
+    margin: 5% 2%;
+  }
+
+  
+  .card {
+    margin: 5% 2%;
+  }
+
+ 
+  .banner-image {
+    width: 100%;
+    height: auto;
+  }
+}

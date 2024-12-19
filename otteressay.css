@@ -1,0 +1,81 @@
+ body {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    height: 50vh;
+    margin: 2%;
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 40%;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin:10%;
+}
+
+.card::before {
+    content: "An Otter Essay";
+    position:absolute;
+    top: -10%;
+    left: 15%;
+    background-color: #ff00aa;
+    color: #000000;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 4px 4px 4px 4px;
+    font-size: 1.5em;
+}
+
+.card p {
+    margin: 5%;
+    color: #333;
+    font-size: 1em;
+   
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .card::before {
+        top: -15px;
+        left: 10px;
+        padding: 8px 12px;
+        font-size: 1.1em;
+    }
+
+    .card p {
+        font-size: 1em;
+        margin:5%;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .card {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .card::before {
+        top: -10px;
+        left: 8px;
+        padding: 6px 10px;
+        font-size: 1em;
+    }
+
+    .card p {
+        font-size: 1em;
+        margin:5%;
+    }
+}
+ 

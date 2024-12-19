@@ -1,0 +1,49 @@
+/* Main Container Styling */
+#top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; 
+  text-align: center; 
+}
+
+/* Card Styling */
+.card {
+  background-color: #003366;
+  padding: 40px 60px; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3); 
+  width: 50%; 
+  max-width: 300px; 
+  text-align: center;
+}
+
+/* Paragraph Styling */
+p {
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation Styling */
+.link ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+.link ul li {
+  margin: 15px 0; 
+}
+
+.link ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.4em; 
+}
+
+.link ul li a:hover {
+  text-decoration:underline;
+}
+
